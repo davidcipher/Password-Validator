@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Validator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-$END$
+  <div class="container">
+    <h1>Password Strength Checker</h1>
+    <input type="password" id="password" placeholder="Enter your password">
+    <div id="strengthText">Strength: </div>
+    <ul id="requirements">
+      <li id="lengthReq">Minimum 8 characters</li>
+      <li id="uppercaseReq">At least 1 uppercase letter</li>
+      <li id="lowercaseReq">At least 1 lowercase letter</li>
+      <li id="numberReq">At least 1 number</li>
+      <li id="specialReq">At least 1 special character (!@#$%^&*)</li>
+    </ul>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
